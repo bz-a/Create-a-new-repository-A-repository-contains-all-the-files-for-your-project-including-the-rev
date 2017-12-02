@@ -1,0 +1,42 @@
+// ==UserScript==
+// @name        P2P Search
+// @namespace   acestream
+// @author      Ace Stream
+// @homepageURL http://awe.acestream.me/scripts/acestream/P2P_Search
+// @description Search video content
+// @version     0.20
+// @grant       GM_log
+// @grant       GM_getResourceText
+// @grant       GM_addStyle
+// @grant       GM_xmlhttpRequest
+// @grant       GM_getResourceURL
+// @grant       GM_getValue
+// @grant       GM_setValue
+// @grant       AWE_engineStatus
+// @noframes
+// @include     http://*.*/*
+// @include     https://*.*/*
+// @require     http://awe-static.acestream.me/userscripts/p2p-search/awe-proxy-light.js?v=0.17
+// @require     http://awe-static.acestream.me/userscripts/p2p-search/search/map.js?v=0.17
+// @require     http://awe-static.acestream.me/userscripts/p2p-search/vendor/jquery/jquery-1.12.4.min.js?v=0.17
+// @require     http://awe-static.acestream.me/userscripts/p2p-search/lib/ts/core.js?v=0.17
+// @require     http://awe-static.acestream.me/userscripts/p2p-search/lib/ts/lang.js?v=0.17
+// @require     http://awe-static.acestream.me/userscripts/p2p-search/lib/ts/jquery_wrapper.js?v=0.17
+// @require     http://awe-static.acestream.me/userscripts/p2p-search/vendor/moment.min.js?v=0.17
+// @require     http://awe-static.acestream.me/userscripts/p2p-search/vendor/clipboard.min.js?v=0.17
+// @require     http://awe-static.acestream.me/userscripts/p2p-search/vendor/malihu/jquery.mCustomScrollbar.concat.min.js?v=0.17
+// @require     http://awe-static.acestream.me/userscripts/p2p-search/lib/ts/player.js?v=0.17
+// @require     http://awe-static.acestream.me/userscripts/p2p-search/lib/ts/jsplayer.concat.js?v=0.17
+// @require     http://awe-static.acestream.me/userscripts/p2p-search/search/handlers/yandex.js?v=0.17
+// @require     http://awe-static.acestream.me/userscripts/p2p-search/search/handlers/google.js?v=0.17
+// @require     http://awe-static.acestream.me/userscripts/p2p-search/search-source.js?v=0.17
+// @resource    css_google http://awe-static.acestream.me/userscripts/p2p-search/css/google.css?v=0.17
+// @resource    css_yandex http://awe-static.acestream.me/userscripts/p2p-search/css/yandex.css?v=0.17
+// @resource    css_share_popup http://awe-static.acestream.me/userscripts/p2p-search/css/share_popup.css?v=0.17
+// @resource    css_tooltip http://awe-static.acestream.me/userscripts/p2p-search/css/tooltip.css?v=0.17
+// @resource    css_search_results http://awe-static.acestream.me/userscripts/p2p-search/css/search-results.css?v=0.17
+// @resource    css_scrollbar http://awe-static.acestream.me/userscripts/p2p-search/vendor/malihu/jquery.mCustomScrollbar.min.css?v=0.17
+// @resource    css_scrollbar_theme http://awe-static.acestream.me/userscripts/p2p-search/css/scrollbar_theme.css?v=0.17
+// @resource    html_share_popup http://awe-static.acestream.me/userscripts/p2p-search/html/share_popup.html?v=0.17
+// @resource    font_material_icons https://fonts.gstatic.com/s/materialicons/v18/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2
+// ==/UserScript==
